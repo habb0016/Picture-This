@@ -15,7 +15,18 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+    <picture>
+      <!-- souce for 960px min width 3 resolutions -->
+      <source srcset="images/museum-480_x_480.jpg,
+      images/museum-960_x_960.jpg 2x,
+      images/museum-1440_x_1440.jpg 3x" media="(min-width: 960px)">
+      <!-- souce for 320px min width 3 resolutions -->
+      <source srcset="images/museum-320_x_180.jpg,
+      images/museum-640_x_360.jpg 2x,
+      images/museum-960_x_540.jpg 3x" media="(min-width: 320px)">      
+      <!-- img in case above code is not supported by browser -->
+      <img src="images/museum.jpg" alt="placeholder">
+    </picture>
 
   </header>
 </body>
