@@ -16,14 +16,30 @@
       <h4>My Really Cool Blog Post</h4>
     </div>
     <picture>
-      <!-- souce for 960px min width 3 resolutions -->
+      <!-- source for 1600px min width 3 resolutions (square) -->
+      <source srcset="images/museum-800_x_800.jpg,
+      images/museum-1600_x_1600.jpg 2x,
+      images/museum-2400_x_2400.jpg 3x" media="(min-width: 1600px)">
+      <!-- source for 1280px min width 3 resolutions (square) -->
+      <source srcset="images/museum-640_x_640.jpg,
+      images/museum-1280_x_1280.jpg 2x,
+      images/museum-1920_x_1920.jpg 3x" media="(min-width: 1280px)">
+      <!-- source for 960px min width 3 resolutions (square) -->
       <source srcset="images/museum-480_x_480.jpg,
       images/museum-960_x_960.jpg 2x,
       images/museum-1440_x_1440.jpg 3x" media="(min-width: 960px)">
-      <!-- souce for 320px min width 3 resolutions -->
+      <!-- source for 720px min width 3 resolutions (landscape) -->
+      <source srcset="images/museum-720_x_405.jpg,
+      images/museum-1440_x_810.jpg 2x,
+      images/museum-2160_x_1215.jpg 3x" media="(min-width: 720px)">      
+      <!-- source for 480px min width 3 resolutions (landscape) -->
+      <source srcset="images/museum-480_x_270.jpg,
+      images/museum-960_x_540.jpg 2x,
+      images/museum-1440_x_810.jpg 3x" media="(min-width: 480px)">
+      <!-- source for 320px min width 3 resolutions (landscape) -->
       <source srcset="images/museum-320_x_180.jpg,
       images/museum-640_x_360.jpg 2x,
-      images/museum-960_x_540.jpg 3x" media="(min-width: 320px)">      
+      images/museum-960_x_540.jpg 3x" media="(min-width: 320px)">  
       <!-- img in case above code is not supported by browser -->
       <img src="images/museum.jpg" alt="placeholder">
     </picture>
